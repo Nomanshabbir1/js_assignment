@@ -1,3 +1,21 @@
-.navbar{
+.navbar {
     background-color: #23036a;
+    height: 70 px
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bolder;
+
+}
+
+.btn-primary {
+    background-color: white !important;
+    color: #23036a !important;
+}
+
+.btn-primary :hover  {
+    background-color: white !important;
+    color: #23036a !important;
+
 }
