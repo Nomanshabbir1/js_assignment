@@ -25,21 +25,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                </ul>
+                </ul>   
                 <form class="d-flex" role="search">
-                    <select class="form-select me-2" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select onchange="onCompanyChange()" id="company" class="form-select me-2" aria-label="Default select example">
                     </select>
-                    <select class="form-select me-2" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select id="brand" class="form-select me-2" aria-label="Default select example">
                     </select> <button type="button" class="btn btn-primary">Search</button>
                 </form>
+
             </div>
         </div>
     </nav>

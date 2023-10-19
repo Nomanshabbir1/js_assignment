@@ -15,7 +15,13 @@
 }
 
 .btn-primary :hover  {
-    background-color: white !important;
-    color: #23036a !important;
-
+    background-color: #23036a ;
+    color: white 
 }
+
+.form-select{
+    width: 250px !important;
+}
+
+
+
