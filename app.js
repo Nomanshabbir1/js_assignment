@@ -40,21 +40,21 @@ var carVariants = {
 
     },
     Honda: {
-        type: {
+        Civic: {
             make: "Honda",
             model: "Civic",
             year: 2022,
             color: "Blue",
             price: 23000,
         },
-        type: {
+        Accord: {
             make: "Honda",
             model: "Accord",
             year: 2021,
             color: "Silver",
             price: 27000,
         },
-        type: {
+        CRV: {
             make: "Honda",
             model: "CR-V",
             year: 2023,
@@ -63,28 +63,28 @@ var carVariants = {
         }
     },
     KIA: {
-        type: {
+        Telluride: {
             make: "Kia",
             model: "Telluride",
             year: 2020,
             color: "Blue",
             price: 33000,
         },
-        type: {
+        Sportage: {
             make: "Kia",
             model: "Sportage",
             year: 2023,
             color: "White",
             price: 29000,
         },
-        type: {
+        Sorento: {
             make: "Kia",
             model: "Sorento",
             year: 2021,
             color: "Red",
             price: 28000,
         },
-        type: {
+        Optima: {
             make: "Kia",
             model: "Optima",
             year: 2022,
@@ -100,8 +100,21 @@ var carVariants = {
 var company = document.getElementById("company")
 var brand = document.getElementById("brand")
 
+company.innerHTML = `<option value="">Select Company</option>`
+brand.innerHTML = `<option>Select Company</option>`
 for (var key in carVariants) {
     company.innerHTML += `
     <option value =${key}>${key.toUpperCase()}</option>`
 
+}
+
+function onCompanyChange() {
+    brand.innerHTML = ``
+    brand.innerHTML = `<option>Select Company</option>`
+    for (var key in carVariants[company.value]) {
+        console.log(key)
+        brand.innerHTML += `
+    <option value =${key}>${key.toUpperCase()}</option>`
+
+    }
 }
